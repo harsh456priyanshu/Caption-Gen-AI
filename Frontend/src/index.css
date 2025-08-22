@@ -1,1 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@500&family=Pinyon+Script&display=swap");
 @import "tailwindcss";
+
+:root {
+  --font-roboto: "Roboto", sans-serif; 
+}
