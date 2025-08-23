@@ -18,7 +18,7 @@ const Comment = () => {
             transition: 'background-image 0.3s ease',
          }}
       >
-         <div className='flex flex-col'>
+         <div className='flex '>
             <div className=' flex  justify-items-start w-full h-20 px-7 mt-20'>
                <h1 className=' flex items-center text-2xl font-serif text-yellow-400 font-extrabold'> <span className='text-white'> People who loves use  </span>  To caption gen AI for social Media !</h1>
             </div>
@@ -27,7 +27,7 @@ const Comment = () => {
                onMouseEnter={() => setIsHover(true)}
                onMouseLeave={() => setIsHover(false)}
             >
-               <input type="text" className=' bg-green-400 text-black px-10 py-1 mt-10 w-67 rounded-full text-sm outline-0 hover:shadow-2xs' placeholder='Feedback ! for Caption Gen AI' />
+               <input type="text" className=' flex items-center bg-green-400 text-black p-7 w-67 rounded text-sm outline-0 h' placeholder='Feedback ! for Caption Gen AI' />
             </div>
          </div>
       </div>
