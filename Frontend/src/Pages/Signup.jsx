@@ -36,18 +36,18 @@ const signup = () => {
   }
 
     return (
-      <div className=' flex flex-col items-center mt-10 '>
-        <div className=' w-80 flex flex-col bg-blue-300 p-10 border-solid border-4 rounded-2xl  hover:border-sky-500 hover:border-4'>
+      <div className=' flex flex-col items-center mt-10 p-10 '>
+        <div className=' w-80 flex flex-col bg-green-400 p-10 '>
           <header>
             <h3 className='text-xl mb-5  flex items-center pl-15 font-serif'>Register Here !</h3>
-            <p className='text-sm flex items-center font-serif'>Join us and start exploring.</p>
+            <p className='text-sm flex justify-center mb-4 font-serif'>Join us and start exploring.</p>
           </header>
          <form  onSubmit={handleSubmit}>
-           <input type="text" name="username" placeholder='Username' className='bg-blue-100 px-5 py-2 rounded outline-0 mb-5 ' onChange={handleChange} />
-          <input type="password" name="password" placeholder='Password' className='bg-blue-100 px-5 py-2 rounded outline-0 mb-5' onChange={handleChange} />
-          <button type='submit' className='bg-green-600 text-white px-2 py-4 rounded-full outline-0 mb-5 '>Register Now</button>
+           <input type="text" name="username" placeholder='Username' className='bg-green-100 px-5 py-2 rounded outline-0 mb-5 ' onChange={handleChange} />
+          <input type="password" name="password" placeholder='Password' className='bg-green-100 px-5 py-2 rounded outline-0 mb-5' onChange={handleChange} />
+          <button type='submit' className='bg-green-600 text-white px-10 py-1 rounded-full outline-0 mb-5 ml-10'>Register</button>
          </form>
-          <Link to="/login" className="text-red-800 font-medium text-md text-center font-serif">Existing User !</Link>
+          <Link to="/login" className="text-white font-medium text-md text-center font-serif">Existing User !</Link>
         </div>
       </div>
     )

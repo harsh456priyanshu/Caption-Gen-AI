@@ -18,16 +18,22 @@ const Comment = () => {
             transition: 'background-image 0.3s ease',
          }}
       >
-         <div className='flex '>
-            <div className=' flex  justify-items-start w-full h-20 px-7 mt-20'>
-               <h1 className=' flex items-center text-2xl font-serif text-yellow-400 font-extrabold'> <span className='text-white'> People who loves use  </span>  To caption gen AI for social Media !</h1>
+         <div className='flex flex-col lg:flex-row px-4 md:px-6 lg:px-8 gap-6 mt-10 md:mt-16 lg:mt-20'>
+            <div className='flex justify-center lg:justify-start w-full lg:w-1/2'>
+               <h1 className='text-center lg:text-left text-xl md:text-2xl lg:text-3xl font-serif text-yellow-400 font-extrabold'>
+                  <span className='text-white block lg:inline'> People who loves use </span>
+                  <span className='block lg:inline'> To caption gen AI for social Media!</span>
+               </h1>
             </div>
             <div
-               className='flex flex-col items-end-safe h-20 px-7 mb-10 input-bg-parent'
+               className='flex flex-col w-full lg:w-1/2 px-4 md:px-6 mb-6 lg:mb-10'
                onMouseEnter={() => setIsHover(true)}
                onMouseLeave={() => setIsHover(false)}
             >
-               <input type="text" className=' flex items-center bg-green-400 text-black p-7 w-67 rounded text-sm outline-0 h' placeholder='Feedback ! for Caption Gen AI' />
+               <input 
+                  type="text" 
+                  className='w-full bg-green-400 text-black p-4 md:p-6 rounded text-sm md:text-base outline-none placeholder-black/70'
+                  placeholder='Feedback ! for Caption Gen AI' />
             </div>
          </div>
       </div>
