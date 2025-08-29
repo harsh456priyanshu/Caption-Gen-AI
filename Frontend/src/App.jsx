@@ -3,6 +3,7 @@ import { BrowserRouter as Router , Routes ,Route}  from 'react-router-dom';
 
 //Components
 import Navbar from "../src/components/Navbar";
+import { ImageProvider } from './context/ImageContext';
 
 // Pages
 import Home from "./Pages/Home";
@@ -16,6 +17,7 @@ import Signup from "./Pages/Signup"
 const App = () => {
   return (
     <Router>
+      <ImageProvider>
         <main>
           <Navbar/>
             <Routes>
@@ -26,6 +28,7 @@ const App = () => {
                 <Route path='/signup' element={<Signup/>} />
             </Routes>
         </main>
+      </ImageProvider>
     </Router>
   )
 }

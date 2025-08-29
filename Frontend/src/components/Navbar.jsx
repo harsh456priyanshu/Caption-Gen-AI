@@ -5,7 +5,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className='bg-linear-to-r/shorter from-green-100 to-green-900 bg-opacity-20 relative'>
+        <nav className='bg-linear-to-r/shorter from-green-400 to-green-500 bg-opacity-20 relative'>
             <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
                 <div className='flex justify-between h-16'>
                     <div className='flex items-center'>
